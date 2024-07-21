@@ -82,6 +82,13 @@ a = a.filter((ele) => {
 console.log(a, a.length);
 }
 
+function fact(a) {
+    let fact = 1;
+for(let i=1;i<=a;i++) {
+    fact = fact*i  
+}
+console.log(fact);
+}
 
 let arr = [
     {id :1 ,name : "Kishor"},
@@ -99,5 +106,5 @@ let str = "i am from india"
 // getName(obj)
 // alpahbaticalOrder('webmaster')
 // largestWord('Web Development Tutorial');
-vowelCount('The quick brown fox')
-
+// vowelCount('The quick brown fox')
+fact(5)
