@@ -173,6 +173,103 @@ function valueDoubleFunc(){
     }
   }
 }
+function sumArray(){
+  let arr = [1, 2, 3, 4, 5 , 6 , 7 , 8 , 9 , 10];
+  arr=arr.reduce((accumulator,current)=>{
+    return accumulator+current
+  })
+  console.log(arr)
+}
+
+function evenArray(){
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  arr=arr.filter((e)=>{
+    return e%2==0
+  })
+  console.log(arr)
+
+}
+function duplicateValue(){
+  let arr = [1, 2, 2, 3, 4, 4, 5];
+//   arr=arr.filter((e,i)=>{
+// return arr.indexOf(e)==i
+//   })
+//console.log(arr)
+let abc=new Set(arr)
+  console.log([...abc])
+}
+
+function findName(){
+  let people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 35 },
+    { name: "David", age: 40 }
+];
+// people=people.filter((e)=>{
+//   if(e.age >=30){
+//     return e
+//   }
+// })
+// console.log(people)
+people.forEach((e)=>{
+  if(e.name == "Bob"){
+    console.log(e)
+  }
+})
+}
+
+function sumOfPrice(){
+  let products = [
+    { name: "Laptop", price: 1000 },
+    { name: "Phone", price: 500 },
+    { name: "Tablet", price: 300 }
+];
+let count=0;
+// products.forEach((e)=>{
+//   count=count + e.price
+// })
+// console.log(count)
+
+products=products.reduce((count,current)=>{
+  return count + current.price
+},0)
+console.log(products)
+}
+
+function increaseAge(){
+  let people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 35 },
+    { name: "David", age: 40 }
+];
+people=people.map((e)=>{
+if(e.name == "Charlie"){
+return {...e,age:e.age+1}
+
+}else{
+  return e
+}
+})
+console.log(people)
+}
+
+function insertObj(){
+  let people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 35 },
+    { name: "David", age: 40 }
+];
+let newArr=[...people,{name:"kishor",age:28}]
+//console.log(newArr)
+newArr=newArr.filter((e)=>{
+  return e.age <30
+})
+console.log(newArr)
+
+}
 //Jpract();
 //demo();
 //addObj();
@@ -184,4 +281,11 @@ function valueDoubleFunc(){
 //countVowelFunc()
 //sortArray()
 //factorial()
-valueDoubleFunc()
+//valueDoubleFunc()
+//sumArray()
+//evenArray()
+//duplicateValue()
+//findName()
+//sumOfPrice()
+//increaseAge()
+insertObj()
