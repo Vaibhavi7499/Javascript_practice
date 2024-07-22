@@ -90,6 +90,12 @@ for(let i=1;i<=a;i++) {
 console.log(fact);
 }
 
+function removeDuplicate(arr) {
+   arr = arr.filter((ele,index,arr) => {
+        return arr.indexOf(ele) == index
+    })
+    console.log(arr);
+}
 let arr = [
     {id :1 ,name : "Kishor"},
     {id :2 ,name : "Vaibhavi"},
@@ -107,4 +113,6 @@ let str = "i am from india"
 // alpahbaticalOrder('webmaster')
 // largestWord('Web Development Tutorial');
 // vowelCount('The quick brown fox')
-fact(5)
+//fact(5)
+
+removeDuplicate([1, 2, 2, 3, 4, 4,5,5, 5])
