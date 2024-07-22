@@ -19,5 +19,16 @@ function findOutSN(a) {
     console.log(str.join(''));
     console.log(Number(num.join('')));
 }
+
+function convertToObj() {
+    let a = [1, 2, 3, 4];
+    let  b = ["ram", "shyam", "sita", "gita"]
+    let c ={};
+        a.forEach((ele,index) => {
+            c[ele] = b[index]
+    })
+    console.log(c);
+}
 // sumOfDigit("12345")
-findOutSN("123Kishor12")
+// findOutSN("123Kishor12")
+convertToObj()
