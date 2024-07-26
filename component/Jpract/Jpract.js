@@ -270,6 +270,21 @@ newArr=newArr.filter((e)=>{
 console.log(newArr)
 
 }
+
+function add(a,b){
+return a+b;
+}
+
+function sub(a,b){
+return a-b
+}
+
+function common(a,b,operator){
+return operator === "add" ? a+b : a-b ;
+}
+//console.log(common(10,20,"add"));
+console.log(common(20,10,"sub"));
+
 //Jpract();
 //demo();
 //addObj();
@@ -288,4 +303,8 @@ console.log(newArr)
 //findName()
 //sumOfPrice()
 //increaseAge()
-insertObj()
+//insertObj()
+//let a = add(10,20);
+//let b = sub(20,10);
+//console.log(a);
+//console.log(b);
