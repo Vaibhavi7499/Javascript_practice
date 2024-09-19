@@ -26,7 +26,7 @@ function updateProduct(id, n, p) {
 
 addProduct({ id: 3, pName: "bag", price: 200 });
 deleteProduct(1);
-console.log(productList);
+// console.log(productList);
 updateProduct(1, "watch", 3000);
 
 let arr = ["vaibhavi", "kishor"];
@@ -54,4 +54,30 @@ function updateString(name) {
 arr = addString("rutuja");
 deleteString("vaibhavi");
 updateString("kishor");
-console.log(arr);
+// console.log(arr);
+
+//Lexical scope
+// function Outer(){
+
+//   let a = 10;
+
+//   function inner(){
+//       console.log(a);
+//   }
+
+//   inner();
+// }
+
+// Outer();
+
+//Closure
+function Outer() {
+  let a = 100;
+
+  return function inner() {
+    return a;
+  };
+}
+
+let abc = Outer();
+console.log(abc());
