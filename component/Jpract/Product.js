@@ -71,13 +71,48 @@ updateString("kishor");
 // Outer();
 
 //Closure
-function Outer() {
-  let a = 100;
+// function Outer() {
+//   let a = 100;
 
-  return function inner() {
-    return a;
-  };
-}
+//   return function inner() {
+//     return a;
+//   };
+// }
 
-let abc = Outer();
-console.log(abc());
+// let abc = Outer();
+// console.log(abc());
+
+let emp = [
+  { id: 1, name: "kishor" },
+  { id: 2, name: "Vaibhavi" },
+  { id: 3, name: "Raju" },
+];
+
+let a = [...emp, { id: 4, name: "sama" }];
+console.log(a);
+
+let b = a.map((e) => {
+  if (e.id === 1) {
+    return {
+      ...e,
+      name: "kishor phawade",
+    };
+  } else {
+    return e;
+  }
+});
+console.log(b);
+
+let c = b.filter((e) => e.id !== 3);
+let d = emp.map((e) => {
+  if (e.id === 2) {
+    return {
+      ...e,
+      name: "vaibhavi bodke",
+      location: "latur",
+    };
+  } else {
+    return e;
+  }
+});
+console.log(d);
