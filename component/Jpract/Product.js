@@ -82,37 +82,176 @@ updateString("kishor");
 // let abc = Outer();
 // console.log(abc());
 
-let emp = [
-  { id: 1, name: "kishor" },
-  { id: 2, name: "Vaibhavi" },
-  { id: 3, name: "Raju" },
+// let emp = [
+//   { id: 1, name: "kishor" },
+//   { id: 2, name: "Vaibhavi" },
+//   { id: 3, name: "Raju" },
+// ];
+
+// let a = [...emp, { id: 4, name: "sama" }];
+// console.log(a);
+
+// let b = a.map((e) => {
+//   if (e.id === 1) {
+//     return {
+//       ...e,
+//       name: "kishor phawade",
+//     };
+//   } else {
+//     return e;
+//   }
+// });
+// console.log(b);
+
+// let c = b.filter((e) => e.id !== 3);
+// let d = emp.map((e) => {
+//   if (e.id === 2) {
+//     return {
+//       ...e,
+//       name: "vaibhavi bodke",
+//       location: "latur",
+//     };
+//   } else {
+//     return e;
+//   }
+// });
+// console.log(d);
+
+let obj = [
+  {
+    id: 1,
+    name: "kishor",
+    address: {
+      city: "ausa",
+    },
+  },
+  {
+    id: 2,
+    name: "Vaibhavi",
+    address: {
+      city: "Latur",
+    },
+  },
+  {
+    id: 3,
+    name: "Govind",
+    address: {
+      city: "Pune",
+    },
+  },
 ];
 
-let a = [...emp, { id: 4, name: "sama" }];
-console.log(a);
+// obj = obj.find((e)=>{
+// return e.id === 2
 
-let b = a.map((e) => {
-  if (e.id === 1) {
-    return {
-      ...e,
-      name: "kishor phawade",
-    };
-  } else {
-    return e;
-  }
-});
-console.log(b);
+// })
+// obj = obj.map((e)=>{
+// return{
+//   ...e,
+//   address:{
+//     ...e.address,
+//     ta:"ausa"
+//   }
+// }
+// })
+// console.log(obj)
 
-let c = b.filter((e) => e.id !== 3);
-let d = emp.map((e) => {
-  if (e.id === 2) {
-    return {
-      ...e,
-      name: "vaibhavi bodke",
-      location: "latur",
-    };
-  } else {
-    return e;
-  }
+// obj = obj.map((e)=>{
+//   if(e.id === 2){
+//     return {
+//       ...e,
+//       address:{
+//         ...e.address,
+//         ta:"Ausa"
+//       }
+//     }
+//   }else{
+//     return{
+//       ...e,
+//       address:{
+//         ...e.address,
+//         ta:"Renapur"
+//       }
+//     }
+//   }
+//   })
+//  console.log(obj)
+
+// let obj1 =[
+//   {
+//       "id": 1,
+//       "name": "kishor",
+//       "address": {
+//           "city": "ausa"
+//       }
+//   },
+//   {
+//       "id": 2,
+//       "name": "Vaibhavi",
+//       "address": {
+//           "city": "Latur"
+//       }
+//   },
+//   {
+//       "id": 3,
+//       "name": "Govind",
+//       "address": {
+//           "city": "Pune"
+//       }
+//   }
+// ]
+
+// let empObj = {};
+
+// obj1.forEach((e)=>{
+//  if(e.id ===1){
+//    empObj.id =e.id
+//  }
+//  else if(e.id === 2){
+//    empObj.name = e.name
+//  }
+//  else{
+//    empObj.address=e.address
+//  }
+// })
+// console.log(empObj)
+
+const people = [
+  {
+    name: "John Doe",
+    age: 28,
+    contact: {
+      email: "john.doe@example.com",
+      phone: "555-1234",
+    },
+    skills: [
+      { name: "JavaScript", level: "Intermediate" },
+      { name: "Python", level: "Advanced" },
+    ],
+  },
+  {
+    name: "Jane Smith",
+    age: 34,
+    contact: {
+      email: "jane.smith@example.com",
+      phone: "555-5678",
+    },
+    skills: [
+      { name: "HTML", level: "Advanced" },
+      { name: "CSS", level: "Advanced" },
+    ],
+  },
+];
+
+let arr1 = [];
+people.forEach((e) => {
+  e.skills.forEach((ele) => {
+    arr.push(ele.name);
+  });
+  console.log(
+    `My name is ${e.name} and my age is ${e.age} my email address is ${
+      e.contact.email
+    } and my skills are ${arr.join(",")}`
+  );
+  arr1 = [];
 });
-console.log(d);
