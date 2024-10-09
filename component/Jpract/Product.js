@@ -216,42 +216,62 @@ let obj = [
 // })
 // console.log(empObj)
 
-const people = [
-  {
-    name: "John Doe",
-    age: 28,
-    contact: {
-      email: "john.doe@example.com",
-      phone: "555-1234",
-    },
-    skills: [
-      { name: "JavaScript", level: "Intermediate" },
-      { name: "Python", level: "Advanced" },
-    ],
-  },
-  {
-    name: "Jane Smith",
-    age: 34,
-    contact: {
-      email: "jane.smith@example.com",
-      phone: "555-5678",
-    },
-    skills: [
-      { name: "HTML", level: "Advanced" },
-      { name: "CSS", level: "Advanced" },
-    ],
-  },
-];
+// const people = [
+//   {
+//     name: "John Doe",
+//     age: 28,
+//     contact: {
+//       email: "john.doe@example.com",
+//       phone: "555-1234",
+//     },
+//     skills: [
+//       { name: "JavaScript", level: "Intermediate" },
+//       { name: "Python", level: "Advanced" },
+//     ],
+//   },
+//   {
+//     name: "Jane Smith",
+//     age: 34,
+//     contact: {
+//       email: "jane.smith@example.com",
+//       phone: "555-5678",
+//     },
+//     skills: [
+//       { name: "HTML", level: "Advanced" },
+//       { name: "CSS", level: "Advanced" },
+//     ],
+//   },
+// ];
 
-let arr1 = [];
-people.forEach((e) => {
-  e.skills.forEach((ele) => {
-    arr.push(ele.name);
-  });
-  console.log(
-    `My name is ${e.name} and my age is ${e.age} my email address is ${
-      e.contact.email
-    } and my skills are ${arr.join(",")}`
-  );
-  arr1 = [];
-});
+// let arr1 = [];
+// people.forEach((e) => {
+//   e.skills.forEach((ele) => {
+//     arr.push(ele.name);
+//   });
+//   console.log(
+//     `My name is ${e.name} and my age is ${e.age} my email address is ${
+//       e.contact.email
+//     } and my skills are ${arr.join(",")}`
+//   );
+//   arr1 = [];
+// });
+
+// const array1 = [1, 2, 3, 4, 5];
+
+// array1.sort(function(a, b){console.log(a,b)});
+
+//2-1=1  1
+//3 -2 = 1  1,2
+//4-3=1     1,2,3
+//5-4=1     1,2,3,4,5
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+
+function commonFunc(arr1,arr2){
+  return arr1.filter((e)=>{
+    return arr2.includes(e)
+  })
+}
+let common = commonFunc(array1,array2);
+console.log(common)
