@@ -265,13 +265,22 @@ let obj = [
 //4-3=1     1,2,3
 //5-4=1     1,2,3,4,5
 
-const array1 = [1, 2, 3, 4, 5];
-const array2 = [4, 5, 6, 7, 8];
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = [4, 5, 6, 7, 8];
 
-function commonFunc(arr1,arr2){
-  return arr1.filter((e)=>{
-    return arr2.includes(e)
-  })
-}
-let common = commonFunc(array1,array2);
-console.log(common)
+// function commonFunc(arr1,arr2){
+//   return arr1.filter((e)=>{
+//     return arr2.includes(e)
+//   })
+// }
+// let common = commonFunc(array1,array2);
+// console.log(common)
+
+//let array =['HTML', 'CSS']
+// let [a,b] =array;
+// arr=[b,a]
+
+//let array = [1,2,3]
+//arr=[]
+//arr.length=0
+//arr.splice()
