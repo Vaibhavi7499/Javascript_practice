@@ -284,3 +284,65 @@ let obj = [
 //arr=[]
 //arr.length=0
 //arr.splice()
+
+//Array Method
+// let arr =[
+//   {id:1,name:"kishor",city:"Pune",age:35},
+//   {id:2,name:"vaibhavi",city:"latur",age:21},
+//   {id:3,name:"sama",city:"kanheri",age:21}
+// ]
+
+//map
+//filter
+//forEach
+//push
+//pop
+//shift
+//unshift
+//join
+//slice
+//splice
+//sort
+//reverse
+//some
+//every
+//find
+
+//arr.push({id:3,name:"sama",city:"kanheri",age:18})
+// arr.pop()
+// arr.shift()
+// arr.unshift({id:3,name:"sama",city:"kanheri"})
+//arr.slice(0,1)
+// let name =["banana" , "apple" , "kiwi" , "mango"]
+// name.splice(1,1,"grapes")
+// console.log(name)
+// a = arr.some((e)=>{
+//   return e.age < 20
+// })
+// a = arr.every((e)=>{
+//   return e.age > 20
+// })
+// console.log(a)
+//
+// a = arr.find((e)=>{
+//   return e.age === 21
+// })
+
+// a = arr.reduce((a,c)=>{
+//   return a+c.age
+// },0)
+
+//String Methods
+//let str = "Hello COCSIT";
+
+//toLowerCase()
+//toUpperCase()
+//trim()
+//split
+//slice
+//charAt
+//replace
+//replaceAll
+//length
+//concat
+//str.charAt(2)
