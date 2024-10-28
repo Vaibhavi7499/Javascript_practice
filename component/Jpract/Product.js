@@ -369,31 +369,22 @@ let obj = [
 //   yield "vaibhavi";
 //   yield "sama";
 //   }
-  
+
 //   const gen = simpleGenerator();
 //   console.log(gen.next())
 //   console.log(gen.next())
 //   console.log(gen.next())
 //   console.log(gen.next())
 
-  //Event Bubbling
-  <div onclick="divFunc()">
-<button onclick="btnFunc(event)">
-click me
-</button>
-</div>
-function divFunc(){
-  console.log("div func clicked")
-  }
-  
-  function btnFunc(event){
-  console.log("btn func clicked")
-  event.stopPropagation()
-  }
-  
-  
-  
-  
-  
-  
-  
+//Event Bubbling
+<div onclick="divFunc()">
+  <button onclick="btnFunc(event)">click me</button>
+</div>;
+function divFunc() {
+  console.log("div func clicked");
+}
+
+function btnFunc(event) {
+  console.log("btn func clicked");
+  event.stopPropagation();
+}
