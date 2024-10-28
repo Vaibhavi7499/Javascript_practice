@@ -348,17 +348,30 @@ let obj = [
 //str.charAt(2)
 
 //Check two array is equal or not
-let isEqual;
+// let isEqual;
 
-let arr1 = [1, 2, 3, 4];
-let arr2 = [4, 3, 2, 1];
+// let arr1 = [1, 2, 3, 4];
+// let arr2 = [4, 3, 2, 1];
 
-if (arr1.length !== arr2.length) {
-  isEqual = false;
-} else {
-  isEqual = arr1.every((ele, i) => {
-    return arr2.includes(ele);
-  });
-}
+// if (arr1.length !== arr2.length) {
+//   isEqual = false;
+// } else {
+//   isEqual = arr1.every((ele, i) => {
+//     return arr2.includes(ele);
+//   });
+// }
 
-isEqual ? "Equal" : "Not Equal";
+// isEqual ? "Equal" : "Not Equal";
+
+//Generator
+function* simpleGenerator(){
+  yield "kishor";
+  yield "vaibhavi";
+  yield "sama";
+  }
+  
+  const gen = simpleGenerator();
+  console.log(gen.next())
+  console.log(gen.next())
+  console.log(gen.next())
+  console.log(gen.next())
