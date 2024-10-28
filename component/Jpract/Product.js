@@ -364,14 +364,36 @@ let obj = [
 // isEqual ? "Equal" : "Not Equal";
 
 //Generator
-function* simpleGenerator(){
-  yield "kishor";
-  yield "vaibhavi";
-  yield "sama";
+// function* simpleGenerator(){
+//   yield "kishor";
+//   yield "vaibhavi";
+//   yield "sama";
+//   }
+  
+//   const gen = simpleGenerator();
+//   console.log(gen.next())
+//   console.log(gen.next())
+//   console.log(gen.next())
+//   console.log(gen.next())
+
+  //Event Bubbling
+  <div onclick="divFunc()">
+<button onclick="btnFunc(event)">
+click me
+</button>
+</div>
+function divFunc(){
+  console.log("div func clicked")
   }
   
-  const gen = simpleGenerator();
-  console.log(gen.next())
-  console.log(gen.next())
-  console.log(gen.next())
-  console.log(gen.next())
+  function btnFunc(event){
+  console.log("btn func clicked")
+  event.stopPropagation()
+  }
+  
+  
+  
+  
+  
+  
+  
