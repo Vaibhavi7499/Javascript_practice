@@ -392,10 +392,23 @@ let obj = [
 // }
 
 //Iterator example
-const fruits = ["apple", "cherry", "banana"];
-const fruitsiterator = fruits[Symbol.iterator]();
-console.log(fruitsiterator.next());
-console.log(123);
-console.log(fruitsiterator.next());
-console.log(fruitsiterator.next());
-console.log(fruitsiterator.next());
+// const fruits = ["apple", "cherry", "banana"];
+// const fruitsiterator = fruits[Symbol.iterator]();
+// console.log(fruitsiterator.next());
+// console.log(123);
+// console.log(fruitsiterator.next());
+// console.log(fruitsiterator.next());
+// console.log(fruitsiterator.next());
+
+//Map
+let map = new Map();
+map;
+map.set("name", "vaibhavi");
+map.set("city", "Latur");
+map.get("city");
+map.has("name");
+map.has("names");
+map.delete("city");
+console.log(map);
+map.clear();
+console.log(map);
