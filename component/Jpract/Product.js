@@ -377,14 +377,25 @@ let obj = [
 //   console.log(gen.next())
 
 //Event Bubbling
-<div onclick="divFunc()">
-  <button onclick="btnFunc(event)">click me</button>
-</div>;
-function divFunc() {
-  console.log("div func clicked");
-}
+// {
+//   <div onclick="divFunc()">
+//   <button onclick="btnFunc(event)">click me</button>
+// </div>;
+// function divFunc() {
+//   console.log("div func clicked");
+// }
 
-function btnFunc(event) {
-  console.log("btn func clicked");
-  event.stopPropagation();
-}
+// function btnFunc(event) {
+//   console.log("btn func clicked");
+//   event.stopPropagation();
+// }
+// }
+
+//Iterator example
+const fruits = ["apple", "cherry", "banana"];
+const fruitsiterator = fruits[Symbol.iterator]();
+console.log(fruitsiterator.next());
+console.log(123);
+console.log(fruitsiterator.next());
+console.log(fruitsiterator.next());
+console.log(fruitsiterator.next());
