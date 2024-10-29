@@ -401,14 +401,14 @@ let obj = [
 // console.log(fruitsiterator.next());
 
 //Map
-let map = new Map();
-map;
-map.set("name", "vaibhavi");
-map.set("city", "Latur");
-map.get("city");
-map.has("name");
-map.has("names");
-map.delete("city");
-console.log(map);
-map.clear();
-console.log(map);
+// let map = new Map();
+// map;
+// map.set("name", "vaibhavi");
+// map.set("city", "Latur");
+// map.get("city");
+// map.has("name");
+// map.has("names");
+// map.delete("city");
+// console.log(map);
+// map.clear();
+// console.log(map);
