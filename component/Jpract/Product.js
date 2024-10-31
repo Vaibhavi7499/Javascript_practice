@@ -414,10 +414,10 @@ let obj = [
 // console.log(map);
 
 //Set in Javascript
-let set = new Set([1,2,3,4,1,2,3]);
-set.add(10)
-set.has(2)
-set.size
-set.delete(10)
-let b = [...set]
-console.log(b)
+let set = new Set([1, 2, 3, 4, 1, 2, 3]);
+set.add(10);
+set.has(2);
+set.size;
+set.delete(10);
+let b = [...set];
+console.log(b);
