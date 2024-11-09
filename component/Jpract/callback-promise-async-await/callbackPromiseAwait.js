@@ -14,6 +14,8 @@
 //     callback(data)
 // }
 
+/** callback hell */
+
 // fetchProducts((data) => {
 //     getDetails(data,(productD) => {
 //         orderProduct(productD,(orderProduct) => {
@@ -41,6 +43,8 @@ const orderProduct = (data) => {
     })
 }
 
+/** Promise */
+
 // fetchProducts().then((products) => {
 //     return getDetails(products)
 // }).then((cart) => {
@@ -50,6 +54,7 @@ const orderProduct = (data) => {
 // }).catch((err) => { console.log('err',err)})
 
 
+/** Aysnc await  */
 createOrder = async () => {
  try {
     const products = await fetchProducts();
