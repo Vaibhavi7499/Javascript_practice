@@ -198,11 +198,91 @@
 // let arr = [10,20,30]
 // console.log(arr.indexOf(20))
 
-let arr = [1, 2, 2, 3, 2];
-let sum = 0;
-arr.forEach((e) => {
-  if (e === 2) {
-    sum++;
-  }
-});
-console.log(sum);
+// let arr = [1, 2, 2, 3, 2];
+// let sum = 0;
+// arr.forEach((e) => {
+//   if (e === 2) {
+//     sum++;
+//   }
+// });
+// console.log(sum);
+
+//ES6 features
+//spread operator, rest operator ,template literal,object destructing , array destructing, promise,async await, default parameter,arrow function,let, const,map,set,reduce,iterator,generator,classes,import,export
+
+// let arr=[1,2,3,4]
+// let array=[...arr]
+// console.log(array)
+
+// let sum=0;
+// function addition(...arr){
+// arr.forEach((e)=>{
+//   sum=sum+e
+// })
+// console.log(sum)
+// }
+// addition(1,2,3,4,5,6,7,8,9,10)
+
+// function addition() {
+//   let a = Array.from(arguments);
+//   let b = a.reduce((a, current) => {
+//     return a + current;
+//   }, 0);
+//   console.log(b);
+// }
+// addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// function address(){
+//   return `At kanheri dist-latur`
+// }
+// let str=`My name is Vaibhavi bodke and my address is ${address()}`
+// console.log(str)
+
+// let Person = {
+//     name: "Kishor",
+//     location: {
+//       pin: 413520,
+//       address: {
+//         city: "Latur",
+//       },
+//     },
+//   };
+
+//   let {location:{address:{city}}}= Person
+//   console.log(city)
+
+//let arr=[1,2,3,4,5]
+//let [a,,c] = arr
+//let [,,,,c] = arr
+//console.log(c)
+
+// function add(a,b,c=20){
+//   console.log(a+b+c)
+// }
+// add(10,5)
+
+//Arrow function
+// const demo=a=>10+a
+// console.log(demo(10))
+// const obj = {
+//   name: "kishor",
+//   demo: () => {
+//     console.log(this);
+//   },
+// };
+// console.log(obj.demo())
+
+// const obj = {
+//   name: "kishor",
+//   demo: function(){
+//     console.log(this);
+//   },
+// };
+// console.log(obj.demo())
+
+
+//Normal function
+// function demo(a){
+//   return 10+a
+// }
+// console.log(demo(10))
