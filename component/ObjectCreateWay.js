@@ -280,9 +280,89 @@
 // };
 // console.log(obj.demo())
 
-
 //Normal function
 // function demo(a){
 //   return 10+a
 // }
 // console.log(demo(10))
+
+//callback
+// function userLoggedIn(callback){
+//     console.log("userLoggedIn")
+//     callback()
+// }
+
+// function createPost(callback){
+//     console.log("createPost")
+//     callback()
+// }
+
+// function deletePost(callback){
+//     console.log("deletePost")
+//     callback()
+// }
+// userLoggedIn(function(){
+//     createPost(function(){
+//         deletePost(function(){
+//             console.log("callback hell")
+//         })
+//     })
+// });
+
+//Promise
+// function userLoggedIn() {
+//     return new Promise((resolve,reject)=>{
+//         resolve("userLoggedIn")
+//     })
+// }
+
+// function createPost() {
+//     return new Promise((resolve,reject)=>{
+//         resolve("createPost")
+//     })
+// }
+
+// function deletePost() {
+//     return new Promise((resolve,reject)=>{
+//         resolve("deletePost")
+//     })
+// }
+
+// userLoggedIn()
+// .then((res)=>{
+//     console.log(res)
+//     return createPost()
+//     .then((res)=>{
+//         console.log(res)
+//         return deletePost()
+//         .then((res)=>{
+//             console.log(res)
+//         })
+//     })
+// })
+
+// async function awitExample(){
+// const loggedin = await userLoggedIn()
+// const post = await createPost()
+// const delpost = await deletePost()
+// console.log(loggedin,post,delpost)
+// }
+// awitExample()
+
+let url = "https://jsonplaceholder.typicode.com/users";
+
+// function byUsingPromise() {
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((user) => {
+//       console.log(user);
+//     });
+// }
+// byUsingPromise();
+
+async function byUsingAsyncAwait() {
+  const response = await fetch(url);
+  const user = await response.json();
+  console.log(user);
+}
+byUsingAsyncAwait();
