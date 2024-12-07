@@ -133,9 +133,76 @@
 // let a=str.split(" ")
 // console.log(a.join("-"))
 
-let str = "aabbcc";
-let a = str.split("");
-let b = a.filter((e, i) => {
-  return a.indexOf(e) != i;
+// let str = "aabbcc";
+// let a = str.split("");
+// let b = a.filter((e, i) => {
+//   return a.indexOf(e) != i;
+// });
+// console.log(b.join(""));
+
+//length , push,pop,unshift,shift,map,forEach,filter,reduce,some,every,includes,sort,join,slice,splice,indexOf,flat,reverse,array.from,isArray,concat
+
+//let arr=["vaibhavi","kishor","rutuja","sama"]
+//console.log(arr.join())
+// let arr1=[...arr]
+// let a=arr1.splice(1,1,"kishor phawade")
+// console.log(arr)
+// console.log(arr1)
+
+// let arr=[
+//   {name:"vaibhavi" , age:21},
+//   {name:"kishor" , age:30},
+//   {name:"sama" , age:17},
+//   {name:"rutu" , age:19},
+// ]
+
+// let a=arr.filter((e)=>{
+// if(e.age >=20){
+//   return e.name
+// }
+
+// })
+// let b = a.map((e)=>{
+//   return e.name
+// })
+// console.log(b)
+
+// let arr = [10, 20, 30];
+// let a = arr.reduce((a,current)=>{
+//   return a+current
+// },0)
+// console.log(a)
+
+// let arr = [5, 10, 15, 20]
+// let max=arr[0]
+// arr.forEach((e)=>{
+//   if(max < e){
+//     max=e;
+//   }
+// })
+// console.log(max)
+
+// let arr= [1, 2, 2, 3, 4, 4]
+// let a = arr.filter((e,i)=>{
+//   return arr.indexOf(e) == i
+// })
+// console.log(a)
+
+// let arr = [1,2,3,4]
+// console.log(arr.includes(3))
+
+// let arr =  [1, [2, 3], [4, [5, 6]]]
+// let a =arr.flat()
+// console.log(a.flat())
+
+// let arr = [10,20,30]
+// console.log(arr.indexOf(20))
+
+let arr = [1, 2, 2, 3, 2];
+let sum = 0;
+arr.forEach((e) => {
+  if (e === 2) {
+    sum++;
+  }
 });
-console.log(b.join(""));
+console.log(sum);
