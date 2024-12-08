@@ -360,9 +360,18 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // }
 // byUsingPromise();
 
-async function byUsingAsyncAwait() {
-  const response = await fetch(url);
-  const user = await response.json();
-  console.log(user);
-}
-byUsingAsyncAwait();
+// async function byUsingAsyncAwait() {
+//   const response = await fetch(url);
+//   const user = await response.json();
+//   console.log(user);
+// }
+// byUsingAsyncAwait();
+
+let arr = ["apple", "banana", "apple", "mango", "banana", "apple"];
+
+let a = arr.reduce((a, c) => {
+  a[c] = (a[c] || 0) + 1;
+  return a;
+}, {});
+
+console.log(a);
