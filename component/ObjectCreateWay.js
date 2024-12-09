@@ -367,11 +367,35 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // }
 // byUsingAsyncAwait();
 
-let arr = ["apple", "banana", "apple", "mango", "banana", "apple"];
+// let arr = ["apple", "banana", "apple", "mango", "banana", "apple"];
 
-let a = arr.reduce((a, c) => {
-  a[c] = (a[c] || 0) + 1;
-  return a;
-}, {});
+// let a = arr.reduce((a, c) => {
+//   a[c] = (a[c] || 0) + 1;
+//   return a;
+// }, {});
 
-console.log(a);
+// console.log(a);
+
+//Math functions
+
+//abs
+//console.log(Math.abs(-10.34))    //10.34
+//console.log(Math.abs(10.34))    //10.34
+
+//floor
+//console.log(Math.floor(2.3))  //2
+//console.log(Math.floor(3.3))  //3
+
+//round
+//console.log(Math.round(3.4))  //3
+//console.log(Math.round(3.5))  //3
+//console.log(Math.round(4.3))  //3
+
+//random
+//console.log(Math.random()*10)
+//console.log(Math.floor(Math.random()*10))
+
+//max
+let arr = [1, 2, 3, 4];
+console.log(Math.max(...arr));
+console.log(Math.min(...arr));
