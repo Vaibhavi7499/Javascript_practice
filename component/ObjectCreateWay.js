@@ -396,6 +396,20 @@ let url = "https://jsonplaceholder.typicode.com/users";
 //console.log(Math.floor(Math.random()*10))
 
 //max
-let arr = [1, 2, 3, 4];
-console.log(Math.max(...arr));
-console.log(Math.min(...arr));
+//let arr = [1, 2, 3, 4];
+//console.log(Math.max(...arr));
+//console.log(Math.min(...arr));
+
+//Generator
+
+function* generatorEx() {
+  yield "cocsit";
+  yield "hello";
+  yield "world";
+}
+
+let gen = generatorEx();
+console.log(gen.next());
+let { value } = gen.next();
+console.log(value);
+console.log(gen.next());
