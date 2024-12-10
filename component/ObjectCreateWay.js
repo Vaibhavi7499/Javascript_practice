@@ -402,14 +402,20 @@ let url = "https://jsonplaceholder.typicode.com/users";
 
 //Generator
 
-function* generatorEx() {
-  yield "cocsit";
-  yield "hello";
-  yield "world";
-}
+// function* generatorEx() {
+//   yield "cocsit";
+//   yield "hello";
+//   yield "world";
+// }
 
-let gen = generatorEx();
-console.log(gen.next());
-let { value } = gen.next();
-console.log(value);
-console.log(gen.next());
+// let gen = generatorEx();
+// console.log(gen.next());
+// let { value } = gen.next();
+// console.log(value);
+// console.log(gen.next());
+
+//IIFE
+
+(function addition(a, b) {
+  console.log("Addition = ", a + b);
+})(10, 10);
