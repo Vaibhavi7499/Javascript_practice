@@ -419,3 +419,11 @@ let url = "https://jsonplaceholder.typicode.com/users";
 (function addition(a, b) {
   console.log("Addition = ", a + b);
 })(10, 10);
+
+//setTimeout
+
+(function demo() {
+  setTimeout(() => {
+    console.log("function is called after 2 sec");
+  }, 2000);
+})();
