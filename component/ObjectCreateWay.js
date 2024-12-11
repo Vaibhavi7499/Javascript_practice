@@ -432,3 +432,10 @@ let url = "https://jsonplaceholder.typicode.com/users";
 //     console.log("function is called after each 2 sec");
 //   },2000);
 // })();
+
+let n = 4;
+let fact = 1;
+for (let i = 1; i <= n; i++) {
+  fact = fact * i;
+}
+console.log(fact);
