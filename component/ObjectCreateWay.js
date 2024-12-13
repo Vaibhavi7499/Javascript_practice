@@ -457,4 +457,4 @@ let getstr = prompt("Enter a string");
 
 //call function
 let str = demo(getstr);
-console.log(str)
+console.log(str);
