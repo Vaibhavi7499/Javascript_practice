@@ -452,5 +452,7 @@ function demo(string) {
     return "It is palindrome";
   }
 }
-let str = demo("hello");
+let getstr = prompt("Enter a string");
+
+let str = demo(getstr);
 console.log(str)
