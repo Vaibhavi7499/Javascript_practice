@@ -442,19 +442,41 @@ let url = "https://jsonplaceholder.typicode.com/users";
 
 // program to check if the string is palindrome or not
 
-function demo(string) {
-  let len = string.length;
+// function demo(string) {
+//   let len = string.length;
 
-  for (let i = 0; i < len / 2; i++) {
-    if (string[i] !== string[len - 1 - i]) {
-      return "It is not a palindrome";
-    }
-    return "It is palindrome";
-  }
-}
-//get input
-let getstr = prompt("Enter a string");
+//   for (let i = 0; i < len / 2; i++) {
+//     if (string[i] !== string[len - 1 - i]) {
+//       return "It is not a palindrome";
+//     }
+//     return "It is palindrome";
+//   }
+// }
+// //get input
+// let getstr = prompt("Enter a string");
 
-//call function
-let str = demo(getstr);
-console.log(str);
+// //call function
+// let str = demo(getstr);
+// console.log(str);
+
+let Person = {
+  name: "Kishor",
+  location: {
+    pin: 413520,
+    address: {
+      city: "Latur",
+    },
+  },
+};
+
+let a = {
+  ...Person,
+  location: {
+    ...Person.location,
+    address: {
+      city: "pune",
+    },
+  },
+};
+console.log(Person);
+console.log(a);
