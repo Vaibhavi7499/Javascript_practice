@@ -481,17 +481,18 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // console.log(Person);
 // console.log(a);
 
-let arr = [10, 5, 15, 4, 2, 1];
-let a = [];
-for (let i = 0; i <= arr.length; i++) {
-  for (let j = i + 1; j <= arr.length; i++) {
-    if (arr[i] > arr[j]) {
-      a = arr[i];
-      arr[i] = arr[j];
-      arr[j] = a;
-    }
-  }
-}
-for (let i = 0; i <= arr.length; i++) {
-  console.log(i);
-}
+//Ascending and descending order
+// let arr = [10, 5, 15, 4, 2, 1];
+// let a = [];
+// for (let i = 0; i <= arr.length; i++) {
+//   for (let j = i + 1; j <= arr.length; i++) {
+//     if (arr[i] > arr[j]) {
+//       a = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = a;
+//     }
+//   }
+// }
+// for (let i = 0; i <= arr.length; i++) {
+//   console.log(i);
+// }
