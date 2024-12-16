@@ -459,24 +459,37 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // let str = demo(getstr);
 // console.log(str);
 
-let Person = {
-  name: "Kishor",
-  location: {
-    pin: 413520,
-    address: {
-      city: "Latur",
-    },
-  },
-};
+// let Person = {
+//   name: "Kishor",
+//   location: {
+//     pin: 413520,
+//     address: {
+//       city: "Latur",
+//     },
+//   },
+// };
 
-let a = {
-  ...Person,
-  location: {
-    ...Person.location,
-    address: {
-      city: "pune",
-    },
-  },
-};
-console.log(Person);
+// let a = {
+//   ...Person,
+//   location: {
+//     ...Person.location,
+//     address: {
+//       city: "pune",
+//     },
+//   },
+// };
+// console.log(Person);
+// console.log(a);
+
+let arr = [10, 5, 15, 4, 2, 1];
+let a;
+for (let i = 0; i <= arr.length; i++) {
+  for (let j = i + 1; j <= arr.length; i++) {
+    if (arr[i] > arr[j]) {
+      a = arr[i];
+      arr[i] = arr[j];
+      arr[j] = a;
+    }
+  }
+}
 console.log(a);
