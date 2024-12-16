@@ -482,7 +482,7 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // console.log(a);
 
 let arr = [10, 5, 15, 4, 2, 1];
-let a;
+let a = [];
 for (let i = 0; i <= arr.length; i++) {
   for (let j = i + 1; j <= arr.length; i++) {
     if (arr[i] > arr[j]) {
@@ -492,4 +492,6 @@ for (let i = 0; i <= arr.length; i++) {
     }
   }
 }
-console.log(a);
+for (let i = 0; i <= arr.length; i++) {
+  console.log(i);
+}
