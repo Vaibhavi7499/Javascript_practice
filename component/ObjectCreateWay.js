@@ -496,3 +496,13 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // for (let i = 0; i <= arr.length; i++) {
 //   console.log(i);
 // }
+
+//swapping of two numbers
+
+let a = prompt("Enter first value : ");
+let b = prompt("Enter second value : ");
+let c;
+c = a;
+a = b;
+b = c;
+console.log("after swapping value of a and b is ", a, b);
