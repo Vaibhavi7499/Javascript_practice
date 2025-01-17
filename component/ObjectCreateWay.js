@@ -499,10 +499,14 @@ let url = "https://jsonplaceholder.typicode.com/users";
 
 //swapping of two numbers
 
-let a = prompt("Enter first value : ");
-let b = prompt("Enter second value : ");
-let c;
-c = a;
-a = b;
-b = c;
-console.log("after swapping value of a and b is ", a, b);
+// let a = prompt("Enter first value : ");
+// let b = prompt("Enter second value : ");
+// let c;
+// c = a;
+// a = b;
+// b = c;
+// console.log("after swapping value of a and b is ", a, b);
+
+let array = [1, 4, 5, 6, 8, 9];
+let a = array.filter((ele) => ele % 2 == 0);
+console.log(a);
