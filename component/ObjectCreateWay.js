@@ -507,6 +507,22 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // b = c;
 // console.log("after swapping value of a and b is ", a, b);
 
-let array = [1, 4, 5, 6, 8, 9];
-let a = array.filter((ele) => ele % 2 == 0);
-console.log(a);
+// let array = [1, 4, 5, 6, 8, 9];
+// let a = array.filter((ele) => ele % 2 == 0);
+// console.log(a);
+
+//Prototype example
+class Person {
+  constructor(name, city) {
+    this.name = name;
+    this.city = city;
+  }
+
+  getPersonData() {
+    console.log(`${this.name} ${this.city}`);
+  }
+}
+
+let p = new Person("vaibhavi", "Latur");
+Person.prototype.nationality = "Indian";
+p.getPersonData();
