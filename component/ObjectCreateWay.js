@@ -512,17 +512,40 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // console.log(a);
 
 //Prototype example
-class Person {
-  constructor(name, city) {
-    this.name = name;
-    this.city = city;
-  }
+// class Person {
+//   constructor(name, city) {
+//     this.name = name;
+//     this.city = city;
+//   }
 
-  getPersonData() {
-    console.log(`${this.name} ${this.city}`);
-  }
+//   getPersonData() {
+//     console.log(`${this.name} ${this.city}`);
+//   }
+// }
+
+// let p = new Person("vaibhavi", "Latur");
+// Person.prototype.nationality = "Indian";
+// p.getPersonData();
+
+//call,apply,bind
+let empObj = {
+  firstName: "Vaibhavi",
+  lastName: "Phawade",
+  age: 22,
+};
+
+let userObj = {
+  firstName: "Kishor",
+  lastName: "Phawade",
+  age: 30,
+};
+
+function getObjData(city) {
+  console.log(this);
+  console.log(`${this.firstName} ${this.lastName} ${this.age} ${city}`);
 }
 
-let p = new Person("vaibhavi", "Latur");
-Person.prototype.nationality = "Indian";
-p.getPersonData();
+getObjData.call(empObj, "latur");
+getObjData.apply(userObj, ["pune"]);
+let abc = getObjData.bind(empObj, "kanheri");
+abc();
