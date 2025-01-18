@@ -528,24 +528,32 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // p.getPersonData();
 
 //call,apply,bind
-let empObj = {
-  firstName: "Vaibhavi",
-  lastName: "Phawade",
-  age: 22,
-};
+// let empObj = {
+//   firstName: "Vaibhavi",
+//   lastName: "Phawade",
+//   age: 22,
+// };
 
-let userObj = {
-  firstName: "Kishor",
-  lastName: "Phawade",
-  age: 30,
-};
+// let userObj = {
+//   firstName: "Kishor",
+//   lastName: "Phawade",
+//   age: 30,
+// };
 
-function getObjData(city) {
-  console.log(this);
-  console.log(`${this.firstName} ${this.lastName} ${this.age} ${city}`);
+// function getObjData(city) {
+//   console.log(this);
+//   console.log(`${this.firstName} ${this.lastName} ${this.age} ${city}`);
+// }
+
+// getObjData.call(empObj, "latur");
+// getObjData.apply(userObj, ["pune"]);
+// let abc = getObjData.bind(empObj, "kanheri");
+// abc();
+
+//Temporal dead zone
+function demo() {
+  let a = 10;
+  console.log(a);
 }
-
-getObjData.call(empObj, "latur");
-getObjData.apply(userObj, ["pune"]);
-let abc = getObjData.bind(empObj, "kanheri");
-abc();
+demo();
+let a = 20;
