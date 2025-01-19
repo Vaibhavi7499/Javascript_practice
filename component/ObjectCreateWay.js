@@ -551,9 +551,21 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // abc();
 
 //Temporal dead zone
-function demo() {
-  let a = 10;
-  console.log(a);
+// function demo() {
+//   let a = 10;
+//   console.log(a);
+// }
+// demo();
+// let a = 20;
+
+//Generator
+function* generatorEx() {
+  yield 10;
+  yield 20;
+  yield 30;
 }
-demo();
-let a = 20;
+let gen = generatorEx();
+gen.next();
+gen.next();
+gen.next();
+gen.next();
