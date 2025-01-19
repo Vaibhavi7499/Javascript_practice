@@ -559,13 +559,70 @@ let url = "https://jsonplaceholder.typicode.com/users";
 // let a = 20;
 
 //Generator
-function* generatorEx() {
-  yield 10;
-  yield 20;
-  yield 30;
+// function* generatorEx() {
+//   yield 10;
+//   yield 20;
+//   yield 30;
+// }
+// let gen = generatorEx();
+// gen.next();
+// gen.next();
+// gen.next();
+// gen.next();
+
+//Callback
+function searchPdt(callback) {
+  console.log("search the pdt");
+  callback();
 }
-let gen = generatorEx();
-gen.next();
-gen.next();
-gen.next();
-gen.next();
+
+function selectQuantity(callback) {
+  console.log("select the quantity");
+  callback();
+}
+
+function placeOrder() {
+  console.log("order is placed");
+}
+
+// searchPdt(() => {
+//   selectQuantity(() => {
+//     placeOrder();
+//   });
+// });
+
+//Promise
+let searchPdt = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("search the pdt");
+  }, 2000);
+});
+
+let selectQuantity = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("select the quantity");
+  }, 2000);
+});
+
+let placeOrder = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("order is placed");
+  }, 2000);
+});
+
+// searchPdt.then((res)=>console.log(res))
+// selectQuantity.then((res)=>console.log(res))
+// placeOrder.then((res)=>console.log(res))
+
+//Async await
+async function doShopping() {
+  try {
+    let search = await searchPdt;
+    let select = await selectQuantity;
+    let order = await placeOrder;
+    console.log(search);
+    console.log(select);
+    console.log(order);
+  } catch (err) {}
+}
+doShopping();
