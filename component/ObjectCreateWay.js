@@ -615,14 +615,37 @@ let placeOrder = new Promise((resolve, reject) => {
 // placeOrder.then((res)=>console.log(res))
 
 //Async await
-async function doShopping() {
-  try {
-    let search = await searchPdt;
-    let select = await selectQuantity;
-    let order = await placeOrder;
-    console.log(search);
-    console.log(select);
-    console.log(order);
-  } catch (err) {}
-}
-doShopping();
+// async function doShopping() {
+//   try {
+//     let search = await searchPdt;
+//     let select = await selectQuantity;
+//     let order = await placeOrder;
+//     console.log(search);
+//     console.log(select);
+//     console.log(order);
+//   } catch (err) {}
+// }
+// doShopping();
+
+//Iterator
+let arr = ["kishor", "vaibhavi", "phawade"];
+
+// function iteratorEx(collection){
+//   let index = 0;
+//   return{
+//     next(){
+//       return{
+//         value : collection[index++] , done : false
+//       }
+//     }
+//   }
+// }
+// let a = iteratorEx(arr);
+
+const abc = arr[Symbol.iterator]();
+abc.next();
+
+// a.next();
+// a.next();
+// a.next();
+// a.next()
