@@ -665,15 +665,26 @@ let arr = ["kishor", "vaibhavi", "phawade"];
 // let b = a.split("    ");
 // console.log(b.join(""));
 
-let array = [-1, 3, 5, 7, 20, 2, 8, 1, 0, 15];
-let max = array[0];
-let min = array[0];
-let obj = {};
+// let array = [-1, 3, 5, 7, 20, 2, 8, 1, 0, 15];
+// let max = array[0];
+// let min = array[0];
+// let obj = {};
 
-array.forEach((e) => {
-  if (max < e) max = e;
-  else if (min > e) min = e;
-});
-obj = { max, min };
+// array.forEach((e) => {
+//   if (max < e) max = e;
+//   else if (min > e) min = e;
+// });
+// obj = { max, min };
 //console.log(max)
 //console.log(min)
+
+const arr1 = [1, 2, 3, 4];
+const arr2 = [3, 4, 5, 6];
+let array = [];
+
+arr1.forEach((e, i) => {
+  if (arr2.includes(e)) {
+    array.push(arr2[arr2.indexOf(e)]);
+  }
+});
+console.log(array);
