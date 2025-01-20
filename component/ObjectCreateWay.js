@@ -642,10 +642,20 @@ let arr = ["kishor", "vaibhavi", "phawade"];
 // }
 // let a = iteratorEx(arr);
 
-const abc = arr[Symbol.iterator]();
-abc.next();
+// const abc = arr[Symbol.iterator]();
+// abc.next();
 
 // a.next();
 // a.next();
 // a.next();
 // a.next()
+
+let str1 = "kishor_phawade";
+//Output : kishorPhawade
+let a = str1.split("_");
+
+let xyz = a.map((e, i) => {
+  if (i == 0) return e;
+  else return e.charAt(0).toUpperCase() + e.slice(1);
+});
+console.log(xyz.join(""));
