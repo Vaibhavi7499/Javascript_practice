@@ -650,12 +650,30 @@ let arr = ["kishor", "vaibhavi", "phawade"];
 // a.next();
 // a.next()
 
-let str1 = "kishor_phawade";
-//Output : kishorPhawade
-let a = str1.split("_");
+// let str1 = "kishor_phawade";
+// //Output : kishorPhawade
+// let a = str1.split("_");
 
-let xyz = a.map((e, i) => {
-  if (i == 0) return e;
-  else return e.charAt(0).toUpperCase() + e.slice(1);
+// let xyz = a.map((e, i) => {
+//   if (i == 0) return e;
+//   else return e.charAt(0).toUpperCase() + e.slice(1);
+// });
+// console.log(xyz.join(""));
+
+// let s = "  Hello    World   ";
+// let a = s.trim();
+// let b = a.split("    ");
+// console.log(b.join(""));
+
+let array = [-1, 3, 5, 7, 20, 2, 8, 1, 0, 15];
+let max = array[0];
+let min = array[0];
+let obj = {};
+
+array.forEach((e) => {
+  if (max < e) max = e;
+  else if (min > e) min = e;
 });
-console.log(xyz.join(""));
+obj = { max, min };
+//console.log(max)
+//console.log(min)
